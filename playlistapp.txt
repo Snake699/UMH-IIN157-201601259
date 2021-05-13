@@ -1,0 +1,48 @@
+import react from "react";
+
+
+export default function Cancion (props) {
+    console.log(props);     
+
+    
+
+    return (
+      <div> 
+        <h2>playlistapp</h2>
+        <table>
+        <tbody>
+        <tr><td>Titulo</td><td>{props.titulo}</td></tr>
+        <tr><td>Duracion</td><td>{props.duracion}</td> </tr>
+        <tr><td>Album</td><td>{props.album}</td> </tr>
+        <tr><td>Numero</td><td>{props.numero}</td> </tr>
+        <tr><td>Fecha Creacion</td><td>{props.fechacreacion }</td> </tr>
+        <tr><td>
+                <button onClick={ () => props.fnsaludar(props.titulo) } >Info</button></td></tr>
+        </tbody>
+        </table>
+      </div>
+    )
+}
+
+export function Cancion2 (props) {
+    console.log(props); 
+
+    
+
+    return (
+      <div> 
+        <h2>Lista de Canciones</h2>
+        <table>
+        <tbody>
+        <tr><td>Titulo</td><td>{props.Ccan.titulo}</td></tr>
+        <tr><td>Duracion</td><td>{props.Ccan.duracion}</td> </tr>
+        <tr><td>Album</td><td>{props.Ccan.album}</td> </tr>
+        <tr><td>Numero</td><td>{props.Ccan.numero}</td> </tr>
+        <tr><td>Fecha Creacion</td><td>{props.Ccan.fechacreacion }</td> </tr>
+        <tr><td>
+                <button onClick={ () => props.fnsaludar(props.Ccan.titulo) } >Info</button></td></tr>
+        </tbody>
+        </table>
+      </div>
+    )
+}

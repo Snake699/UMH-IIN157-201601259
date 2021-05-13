@@ -1,0 +1,60 @@
+import './App.css';
+import Cancion, {Cancion2} from "./playlistapp/Cancion"
+
+function App() {
+
+const v_titulo= "Symphony of Destruction";
+const v_duracion= 4;
+const v_album= "Symphony of Destruction"; 
+const v_numero= 12;
+const v_fechacreacion= "14 de julio de 1992"
+
+const canciones = {
+  titulo: "The Number Of The Beast", 
+  duracion: 5,
+  album: "The Number Of The Beast", 
+  numero: 7,
+  fechacreacion: "22 de marzo 1982"
+};
+
+const f_saludar= (props) => {
+  alert("¡!Escuchas!"+props);
+}
+
+
+  return (
+    <div className="App">
+      <header className="App-header">
+          <p>
+           playlist
+        </p>
+        <Cancion2 Ccan={canciones}
+        fnsaludar= {f_saludar}
+        />
+
+<Cancion 
+        
+        titulo= {v_titulo} 
+        duracion= {v_duracion} 
+        album= {v_album}
+        numero= {v_numero}
+        fechacreacion= {v_fechacreacion}
+        fnsaludar= {f_saludar}
+         />
+
+<Cancion 
+        
+        titulo="Entre Dos Tierras" 
+        duracion="4 : 19" 
+        album="Senderos de Traicion" 
+        numero="9" 
+        fechacreacion="4 de diciembre de 1990"
+        fnsaludar= {f_saludar}
+        
+        />
+      </header>
+    </div>
+  );
+}
+
+export default App;
