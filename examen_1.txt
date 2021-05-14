@@ -1,0 +1,74 @@
+import './App.css';
+import Alumno, {Alumno2, Alumno1} from "./Componente/alumno"
+
+function App() {
+
+
+const alumnos123 = {
+  identidad: "0908200012345 ", 
+  nombre: 'Oscar Antonio Perez Lopez',
+  nacimiento: "Avivanos", 
+  nota: 4,
+};
+
+const v_identidad= " ";
+const v_nombre= 4;
+const v_nacimiento= " "; 
+const v_nota= 1;
+
+
+const f_saludar= (props) => {
+  alert("Las notas: "+props);
+}
+
+
+  return (
+    <div className="App">
+      <header className="App-header">
+          <p>
+           Alumnos
+        </p>
+        <Alumno
+         identidad= "0908200012345 " 
+         nombre='Oscar Antonio Peres Lopez'
+         nacimiento="25-may-2000"
+         nota= ""
+               
+            
+        
+        Ccan={alumnos123}
+        fnsaludar= {f_saludar}
+        />
+
+<Alumno1 
+       identidad= "0801200112345 " 
+       nombre='Maria Fernanda Juarez'
+       nacimiento="12-feb-2001"
+       nota= "4"
+             
+          
+             fnsaludar= {f_saludar}
+             
+             /> 
+      
+
+<Alumno2
+
+identidad= "0908200012345 " 
+  nombre='Carlos Herminio Aguirre'
+  nacimiento="25-may-200"
+  nota= "4"
+        
+     
+        fnsaludar= {f_saludar}
+        
+        />
+      </header>
+    </div>
+  );
+}
+
+export default App;
+
+
+

@@ -1,0 +1,69 @@
+import react from "react";
+
+export default function Alumno (props) {
+    console.log(props);     
+
+    
+
+    return (
+      <div> 
+        <h3> Alumno 1</h3>
+        <label>
+        
+        <tr></tr><td>Identidad:</td><td>{props.identidad}</td>
+        <tr><td>Nombre Completo:</td><td>{props.nombre}</td> </tr>
+        <tr><td>Nacimiento:</td><td>{props.nacimiento}</td> </tr>
+        <tr><td>Nota Promedio:</td><td>{props.nota}</td> </tr>
+        <tr><td>
+            <center>   <button onClick={ () => props.fnsaludar(props.titulo) } >Ver las notas del alumno</button></center> </td></tr>
+             
+        </label>
+      </div>
+    )
+}
+
+export function Alumno1 (props) {
+    console.log(props);     
+
+    
+
+    return (
+      <div> 
+        <h3> Alumno 2</h3>
+        <label>
+        
+        <tr></tr><td>Identidad:</td><td>{props.identidad}</td>
+        <tr><td>Nombre Completo:</td><td>{props.nombre}</td> </tr>
+        <tr><td>Nacimiento:</td><td>{props.nacimiento}</td> </tr>
+        <tr><td>Nota Promedio:</td><td>{props.nota}</td> </tr>
+        <tr><td>
+            <center>   <button onClick={ () => props.fnsaludar(props.titulo) } >Ver las notas del alumno</button></center> </td></tr>
+             
+        </label>
+      </div>
+    )
+}
+
+
+
+export function Alumno2 (props) {
+    console.log(props); 
+
+    
+
+    return (
+      <div> 
+        <h3> Alumno 3</h3>
+        <label>
+        
+        <tr></tr><td>Identidad:</td><td>{props.identidad}</td>
+        <tr><td>Nombre Completo:</td><td>{props.nombre}</td> </tr>
+        <tr><td>Nacimiento:</td><td>{props.nacimiento}</td> </tr>
+        <tr><td>Nota Promedio:</td><td>{props.nota}</td> </tr>
+          <tr><td>
+                <button onClick={ () => props.fnsaludar(props.Ccan.titulo) } >Ver las Notas del alumno</button></td></tr>
+      
+        </label>
+      </div>
+    )
+}
