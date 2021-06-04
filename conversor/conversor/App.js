@@ -15,8 +15,8 @@ Alert.alert(
 
 const convertir =(valor) =>{
   const resultado= valor*24.16;
-  setEntrada(valor); // Aqui mandamos valor a la variable puesta por el usuario
-  setConversion(resultado); // Aqui mandamos valor a la variable puesta por el usuario
+  setEntrada(valor); 
+  setConversion(resultado); 
 }
 const inicializar =()=>{
 setConversion(0);
@@ -53,7 +53,7 @@ setEntrada(0);
          <Button
          title="Limpiar"
          color='#B71414'
-         onPress={inicializar}//accion del boton
+         onPress={inicializar}
         
 
          ></Button>
