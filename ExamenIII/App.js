@@ -153,8 +153,8 @@ fondoScroll: {
 },
 input:{
   height: 40,
-margin: 12,
-borderWidth: 1,
+margin: 11,
+borderWidth: 2,
 backgroundColor:"white"
 },
 
