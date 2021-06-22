@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import {
   SafeAreaView,
@@ -11,7 +10,7 @@ import {
 } from 'react-native';
 
 
-import Tarea from "./src/componentes/Tarea";
+import Tarea from "./src/Componentes/Tarea";
 
 export default function App(){
 
@@ -38,7 +37,7 @@ const agragarTarea =() =>{
 
   return(
     <SafeAreaView>
-      <Button style={styles.btn} title="Nueva Tarea" color="#54EC68" onPress={agragarTarea}></Button>
+      <Button style={styles.btn} title="Nueva Tarea" color="#FF5733" onPress={agregarTarea}></Button>
       <ScrollView>
 
       {
@@ -47,7 +46,26 @@ const agragarTarea =() =>{
 
   ))
 
+/*
+<Tarea
+        titulo="Tarea 1"
+        descripcion = "Descaripcion Tarea 1"
+        />
 
+      <Tarea
+        titulo="Tarea 2"
+        descripcion = "Descaripcion Tarea 2"
+        />
+
+        <Tarea
+        />
+<Tarea
+        />
+        <Tarea
+        />
+        <Tarea
+        />
+        */
 
       }
 
@@ -80,30 +98,9 @@ const styles = StyleSheet.create({
 
   },
   btn:{
-marginTop:10,
-marginLeft:10,
-marginRight:10
+marginTop:8,
+marginLeft:8,
+marginRight:8
 
   }
 });
-
-/*
-<Tarea
-        titulo="Tarea 1"
-        descripcion = "Descaripcion Tarea 1"
-        />
-
-      <Tarea
-        titulo="Tarea 2"
-        descripcion = "Descaripcion Tarea 2"
-        />
-
-        <Tarea
-        />
-<Tarea
-        />
-        <Tarea
-        />
-        <Tarea
-        />
-        */

@@ -26,24 +26,24 @@ const {id=0,titulo = "Titulo de Tarea", descripcion ="Sin descripcion"} = data;
 const estilos = StyleSheet.create({
 contenedor:{
 width: '95%',
-height:120,
-padding:10,
-marginLeft:10,
-marginRight:10,
-margin:10,
-marginBottom:10,
-marginTop:10,
-borderRadius:11,
-backgroundColor:'#0FBC33'
+height:140,
+padding:8,
+marginLeft:8,
+marginRight:8,
+margin:8,
+marginBottom:8,
+marginTop:8,
+borderRadius:10,
+backgroundColor:'#54A1F0'
 },
 titulo:{
-    fontSize: 18,
+    fontSize: 22,
     fontWeight: '500',
 
 },
 
 descripcion:{
-  fontSize: 18,
+  fontSize: 20,
   fontWeight: '500',
 
 }
